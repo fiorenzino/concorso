@@ -1,4 +1,4 @@
-import {EDITIONS} from "./mock-heroes";
+import {EDITIONS} from "./edition-mock";
 import {Injectable} from "@angular/core";
 import {Edition} from "./edition";
 

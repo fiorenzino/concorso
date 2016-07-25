@@ -1,18 +1,18 @@
-///<reference path="work-detail.component.ts"/>
+///<reference path="works/work-detail.component.ts"/>
 import {provideRouter, RouterConfig}  from '@angular/router';
 
-import {DashboardComponent} from './dashboard.component';
-import {HeroesComponent} from './heroes.component';
-import {HeroDetailComponent} from './hero-detail.component';
-import {HomeComponent} from "./home.components";
-import {ArtistDetailComponent} from "./artist-detail.component";
-import {ArtistsComponent} from "./artists.component";
-import {EditionDetailComponent} from "./edition-detail.component";
-import {EditionsComponent} from "./editions.component";
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {HeroesComponent} from './heroes/heroes.component';
+import {HeroDetailComponent} from './heroes/hero-detail.component';
+import {HomeComponent} from "./home/home.components";
+import {ArtistDetailComponent} from "./artists/artist-detail.component";
+import {ArtistsComponent} from "./artists/artists.component";
+import {EditionDetailComponent} from "./editions/edition-detail.component";
+import {EditionsComponent} from "./editions/editions.component";
 import {MuseumComponent} from "./museum/museum.components";
-import {WhereComponent} from "./where.components";
-import {ContactComponent} from "./contact.components";
-import {WorkDetailComponent} from "./work-detail.component";
+import {WhereComponent} from "./where/where.components";
+import {ContactComponent} from "./contact/contact.components";
+import {WorkDetailComponent} from "./works/work-detail.component";
 
 const routes:RouterConfig = [
     {

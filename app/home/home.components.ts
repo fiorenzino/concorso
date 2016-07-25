@@ -1,15 +1,15 @@
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
-import {Artist} from "./artist";
-import {Work} from "./work";
-import {Edition} from "./edition";
-import {ArtistService} from "./artist.service";
-import {WorkService} from "./work.service";
-import {EditionService} from "./edition.service";
+import {Artist} from "../artists/artist";
+import {Work} from "../works/work";
+import {Edition} from "../editions/edition";
+import {ArtistService} from "../artists/artist.service";
+import {WorkService} from "../works/work.service";
+import {EditionService} from "../editions/edition.service";
 
 @Component({
     selector: 'home',
-    templateUrl: 'app/home.component.html'
+    templateUrl: 'app/home/home.component.html'
 })
 export class HomeComponent implements OnInit {
 

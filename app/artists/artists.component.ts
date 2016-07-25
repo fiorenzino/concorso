@@ -1,34 +1,34 @@
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
-import {Edition} from "./edition";
-import {EditionService} from "./edition.service";
+import {Artist} from "./artist";
+import {ArtistService} from "./artist.service";
 
 @Component({
-    selector: 'editions',
-    templateUrl: 'app/editions.component.html'
+    selector: 'artists',
+    templateUrl: 'app/artists/artists.component.html'
 })
-export class EditionsComponent implements OnInit {
-    list:Edition[];
-    element:Edition;
+export class ArtistsComponent implements OnInit {
+    list:Artist[];
+    element:Artist;
 
     constructor(private router:Router,
-                private editionService:EditionService) {
+                private artistService:ArtistService) {
     }
 
     getList() {
-        this.editionService.getEditions().then(list => this.list = list);
+        this.artistService.getArtists().then(list => this.list = list);
     }
 
     ngOnInit() {
         this.getList();
     }
 
-    onSelect(element:Edition) {
+    onSelect(element:Artist) {
         this.element = element;
     }
 
     gotoDetail() {
-        this.router.navigate(['/edizioni', this.element.id]);
+        this.router.navigate(['/artisti', this.element.id]);
     }
 }
 

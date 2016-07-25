@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
-import {Hero} from './hero';
-import {HeroService} from './hero.service';
+import {Hero} from './../hero';
+import {HeroService} from './../hero.service';
 
 @Component({
     selector: 'contact',
-    templateUrl: 'app/contact.component.html'
+    templateUrl: 'app/contact/contact.component.html'
 })
 export class ContactComponent implements OnInit {
 

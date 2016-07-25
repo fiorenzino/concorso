@@ -5,7 +5,7 @@ import {WorkService} from "./work.service";
 
 @Component({
     selector: 'work',
-    templateUrl: 'app/work.component.html'
+    templateUrl: 'app/works/work.component.html'
 })
 export class WorkComponent implements OnInit {
     works:Work[];

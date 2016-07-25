@@ -1,4 +1,4 @@
-import {WORKS} from "./mock-heroes";
+import {WORKS} from "./work-mock";
 import {Injectable} from "@angular/core";
 import {Work} from "./work";
 

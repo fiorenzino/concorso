@@ -3,9 +3,9 @@ import {bootstrap}    from '@angular/platform-browser-dynamic';
 import {AppComponent} from './app.component';
 import {appRouterProviders} from './app.routes';
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
-import {ArtistService} from "./artist.service";
-import {EditionService} from "./edition.service";
-import {WorkService} from "./work.service";
+import {ArtistService} from "./artists/artist.service";
+import {EditionService} from "./editions/edition.service";
+import {WorkService} from "./works/work.service";
 import {MenuHeaderComponent} from "./menu-header.component";
 
 bootstrap(AppComponent, [

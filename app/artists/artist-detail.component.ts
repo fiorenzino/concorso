@@ -1,14 +1,12 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
-import {Hero} from './hero';
-import {HeroService} from './hero.service';
 import {ArtistService} from "./artist.service";
 import {Artist} from "./artist";
 
 @Component({
     selector: 'artist-detail',
-    templateUrl: 'app/artist-detail.component.html'
+    templateUrl: 'app/artists/artist-detail.component.html'
 })
 export class ArtistDetailComponent implements OnInit, OnDestroy {
     element:Artist;

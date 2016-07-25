@@ -5,7 +5,7 @@ import {Edition} from "./edition";
 
 @Component({
     selector: 'edition-detail',
-    templateUrl: 'app/edition-detail.component.html'
+    templateUrl: 'app/editions/edition-detail.component.html'
 })
 export class EditionDetailComponent implements OnInit, OnDestroy {
     element:Edition;

@@ -5,7 +5,7 @@ import {Work} from "./work";
 
 @Component({
     selector: 'work-detail',
-    templateUrl: 'app/work-detail.component.html'
+    templateUrl: 'app/works/work-detail.component.html'
 })
 export class WorkDetailComponent implements OnInit, OnDestroy {
     work:Work;

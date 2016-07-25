@@ -1,4 +1,4 @@
-import {ARTISTS} from "./mock-heroes";
+import {ARTISTS} from "./artist-mock";
 import {Injectable} from "@angular/core";
 import {Artist} from "./artist";
 
