@@ -6,6 +6,7 @@ import {LocationStrategy, HashLocationStrategy} from "@angular/common";
 import {ArtistService} from "./artist.service";
 import {EditionService} from "./edition.service";
 import {WorkService} from "./work.service";
+import {MenuHeaderComponent} from "./menu-header.component";
 
 bootstrap(AppComponent, [
     appRouterProviders, ArtistService, EditionService, WorkService,
@@ -14,6 +15,7 @@ bootstrap(AppComponent, [
         useClass: HashLocationStrategy
     }
 ]);
+bootstrap(MenuHeaderComponent);
 
 
 /*
