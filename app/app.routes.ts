@@ -1,9 +1,5 @@
 ///<reference path="works/work-detail.component.ts"/>
-import {provideRouter, RouterConfig}  from '@angular/router';
-
-import {DashboardComponent} from './dashboard/dashboard.component';
-import {HeroesComponent} from './heroes/heroes.component';
-import {HeroDetailComponent} from './heroes/hero-detail.component';
+import {provideRouter, RouterConfig} from "@angular/router";
 import {HomeComponent} from "./home/home.components";
 import {ArtistDetailComponent} from "./artists/artist-detail.component";
 import {ArtistsComponent} from "./artists/artists.component";
@@ -19,18 +15,6 @@ const routes:RouterConfig = [
         path: '',
         redirectTo: '/home',
         pathMatch: 'full'
-    },
-    {
-        path: 'dashboard',
-        component: DashboardComponent
-    },
-    {
-        path: 'detail/:id',
-        component: HeroDetailComponent
-    },
-    {
-        path: 'heroes',
-        component: HeroesComponent
     },
     {
         path: 'home',
@@ -72,6 +56,10 @@ const routes:RouterConfig = [
         path: 'contatti',
         component: ContactComponent
     },
+    {
+        path: '**',
+        component: HomeComponent
+    }
 
 ];
 
