@@ -1,0 +1,51 @@
+<!-- ======================================= content ======================================= -->
+<main id="content">
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Edizioni </h1>
+                    <p>tutte le edizioni finora svolte.</p>
+                </div>
+                <div class="col-sm-6 hidden-xs">
+                    <ul id="navTrail">
+                        <li><a href="index.html">Home</a></li>
+                        <li id="navTrailLast">Edizioni</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pt30 pb30">
+        <div class="container clearfix">
+            <div class="row">
+                <!-- portfolio item -->
+                <article class="col-sm-4 isotopeItem women" *ngFor="let edition of list">
+                    <div class="pinBox">
+                        <figure>
+                            <img alt="" src="{{edition.img}}" class="img-responsive">
+                        </figure>
+                        <section class="boxContent">
+                            <h3>
+                                <a href="#/edizioni/{{edition.id}}" class="moreLink" (click)="onSelect(edition)">{{edition.name}}</a>
+                            </h3>
+                            <p>
+                                {{edition.description}}
+                            </p>
+                        </section>
+                    </div>
+                </article>
+                <!-- portfolio item -->
+            </div>
+        </div>
+    </section>
+</main>
+<!-- / content -->
+
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

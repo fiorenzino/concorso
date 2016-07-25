@@ -1,0 +1,136 @@
+<!-- ======================================= content ======================================= -->
+<main id="content">
+    <section>
+        <div class="owl-carousel neko-data-owl owl-animated nekoOwlcontrolHover" data-neko_items="1"
+             data-neko_singleitem="true" data-neko_pagination="true" data-neko_paginationnumbers="true"
+             data-neko_transitionstyle="fade" data-neko_autoheight="true" data-neko_navigation="true">
+
+            <!-- owl carousel item 1 -->
+            <div class="item">
+                <div class="bgMask opacity-4"></div>
+                <img src="/images/slider/owl-animated/bg1.jpg" alt="image" class="full-width"/>
+                <div class="caption-wrapper">
+                    <div class="caption">
+                        <div class="caption-content-position text-center v-middle"><img
+                                src="/images/slider/owl-animated/logo-big.png" alt="TURQUOISE Logo" style="width:320px;"
+                                data-neko_animation="fadeIn"/>
+                            <div class="caption-content textLight" data-neko_animation="fadeInLeftBig">
+                                <h1 class="bigHeading">Elegant & versatile design</h1>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                            <br> <a href="http://www.google.com" title="" class="btn default"
+                                    data-neko_animation="fadeInRightBig">
+                                Read More
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- / owl carousel item 1 -->
+
+            <!-- owl carousel item 2 -->
+            <div class="item">
+                <div class="bgMask opacity-5"></div>
+                <img src="/images/slider/owl-animated/bg2.jpg" alt="image" class="full-width"/>
+                <div class="caption-wrapper">
+                    <div class="caption right">
+                        <div class="caption-content-position text-right v-middle">
+                            <div class="caption-content textLight" data-neko_animation="fadeInDownBig">
+                                <h1 class="bigHeading">10 color schemes</h1>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                            <br>
+                            <a href="#" title="slide" class="btn default" data-neko_animation="fadeInUpBig">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / owl carousel item 2 -->
+
+            <!-- owl carousel item 3 -->
+            <div class="item">
+                <div class="bgMask opacity-2"></div>
+                <img src="/images/slider/owl-animated/bg3.jpg" alt="image" class="full-width"/>
+                <div class="caption-wrapper">
+                    <div class="caption left">
+                        <div class="caption-content-position text-left v-middle">
+                            <div class="caption-content textLight" data-neko_animation="fadeInDownBig">
+                                <h1 class="bigHeading">Easy to use HTML components</h1>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                            <br> <a href="#" title="caption" class="btn default large"
+                                    data-neko_animation="fadeInUpBig">
+                            Read More
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- / owl carousel item 3 -->
+
+        </div>
+    </section>
+    <!-- slider -->
+
+    <section class="pt30 pb30">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="heading">
+                        Edizioni
+                        <span class="subTitle">
+									Ultime edizioni del concorso
+                        </span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- portfolio item -->
+                <article class="col-sm-4 isotopeItem women" *ngFor="let edition of editions">
+                    <div class="pinBox">
+                        <figure>
+                            <img alt="" src="{{edition.img}}" class="img-responsive">
+                        </figure>
+                        <section class="boxContent">
+                            <h3>
+                                <a href="#/edizioni/{{edition.id}}" class="moreLink"
+                                   (click)="onSelect(edition)">{{edition.name}}</a></h3>
+                            <p>
+                                {{edition.description}}
+                            </p>
+                        </section>
+                    </div>
+                </article>
+                <!-- portfolio item -->
+            </div>
+        </div>
+    </section>
+
+    <section class="pt30 pb30">
+        <div class="container clearfix">
+            <div class="row">
+                <!-- portfolio item -->
+                <article class="col-sm-4 isotopeItem women" *ngFor="let artist of artists">
+                    <div class="pinBox">
+                        <section class="boxContent">
+                            <h3><a href="#/artisti/{{artist.id}}" class="moreLink" (click)="onSelect(artist)">{{artist.name}}</a>
+                            </h3>
+                            <p>
+                                {{artist.description}}
+                            </p>
+                        </section>
+                    </div>
+                </article>
+                <!-- portfolio item -->
+            </div>
+        </div>
+    </section>
+</main>
+<!-- / content -->

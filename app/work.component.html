@@ -1,0 +1,52 @@
+<!-- ======================================= content ======================================= -->
+<main id="content">
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Opere </h1>
+                    <p>tutte i lavori.</p>
+                </div>
+                <div class="col-sm-6 hidden-xs">
+                    <ul id="navTrail">
+                        <li><a href="index.html">Home</a></li>
+                        <li id="navTrailLast">Opere</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pt30 pb30">
+        <div class="container clearfix">
+            <div class="row">
+                <!-- portfolio item -->
+                <article class="col-sm-4 isotopeItem women" *ngFor="let hero of heroes">
+                    <div class="pinBox">
+                        <figure>
+                            <img alt="" src="{{hero.img}}" class="img-responsive">
+                        </figure>
+                        <section class="boxContent">
+                            <h3>
+                                <a href="#/detail/{{hero.id}}" class="moreLink"
+                                   (click)="onSelect(hero)">{{hero.name}}</a>
+                            </h3>
+                            <p>
+                                {{hero.bio}}
+                            </p>
+                        </section>
+                    </div>
+                </article>
+                <!-- portfolio item -->
+            </div>
+        </div>
+    </section>
+</main>
+<!-- / content -->
+
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

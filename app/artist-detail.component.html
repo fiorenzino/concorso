@@ -1,0 +1,37 @@
+<section class="pt30" *ngIf="element">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="{{element.img}}" alt="{{element.name}}" class="img-responsive"/>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="projectInfos" *ngIf="element">
+    <div class="container pt40 pb40">
+        <div class="row pb15">
+            <div class="col-md-12">
+                <h2>{{element.name}}</h2>
+                <p>
+                    {{element.bio}}
+                </p>
+            </div>
+        </div>
+
+        <div class="row pt15 pb40">
+            <div class="col-md-12">
+                <h2>Artisti</h2>
+                <p>
+                    <button (click)="goBack()">Back</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

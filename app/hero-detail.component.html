@@ -1,0 +1,49 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
+
+
+<section class="pt30" *ngIf="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="{{hero.img}}" alt="{{hero.name}}" class="img-responsive"/>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="projectInfos" *ngIf="hero">
+  <div class="container pt40 pb40">
+    <div class="row pb15">
+      <div class="col-md-12">
+        <h2>{{hero.name}}</h2>
+        <p>
+          {{hero.bio}}
+        </p>
+      </div>
+    </div>
+
+    <div class="row pt15 pb40">
+      <div class="col-md-12">
+        <h2>Artisti</h2>
+        <p>
+          <button (click)="goBack()">Back</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
