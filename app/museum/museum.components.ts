@@ -3,7 +3,7 @@ import {Router} from "@angular/router";
 
 @Component({
     selector: 'museum',
-    templateUrl: 'app/museum.component.html'
+    templateUrl: 'app/museum/museum.component.html'
 })
 export class MuseumComponent implements OnInit {
 

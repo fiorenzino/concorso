@@ -9,7 +9,7 @@ import {ArtistDetailComponent} from "./artist-detail.component";
 import {ArtistsComponent} from "./artists.component";
 import {EditionDetailComponent} from "./edition-detail.component";
 import {EditionsComponent} from "./editions.component";
-import {MuseumComponent} from "./museum.components";
+import {MuseumComponent} from "./museum/museum.components";
 import {WhereComponent} from "./where.components";
 import {ContactComponent} from "./contact.components";
 import {WorkDetailComponent} from "./work-detail.component";

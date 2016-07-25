@@ -18,15 +18,15 @@
     "outDir": "./dist",
     "rootDir": "./app"
   },
-  "compileOnSave": false,
+  "compileOnSave": false//,
 //  "files": [
 //    "app",
 //    //    "app/main.ts",
 //    //    "app/artists.component.ts",
 //    "typings/index.d.ts"
 //  ],
-  "exclude": [
-    "node_modules",
-    "wwwroot"
-  ]
+//  "exclude": [
+//    "node_modules",
+//    "wwwroot"
+//  ]
 }
