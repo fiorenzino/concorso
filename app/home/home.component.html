@@ -100,8 +100,7 @@
                         </figure>
                         <section class="boxContent">
                             <h3>
-                                <a href="#/edizioni/{{edition.id}}" class="moreLink"
-                                   (click)="onSelect(edition)">{{edition.name}}</a></h3>
+                                <a href="#/edizioni/{{edition.id}}" class="moreLink">{{edition.name}}</a></h3>
                             <p>
                                 {{edition.description}}
                             </p>
@@ -120,7 +119,7 @@
                 <article class="col-sm-4 isotopeItem women" *ngFor="let artist of artists">
                     <div class="pinBox">
                         <section class="boxContent">
-                            <h3><a href="#/artisti/{{artist.id}}" class="moreLink" (click)="onSelect(artist)">{{artist.name}}</a>
+                            <h3><a href="#/artisti/{{artist.id}}" class="moreLink">{{artist.name}}</a>
                             </h3>
                             <p>
                                 {{artist.description}}
