@@ -58,7 +58,7 @@ const routes:RouterConfig = [
     },
     {
         path: '**',
-        component: HomeComponent
+        redirectTo: '/home'
     }
 
 ];
