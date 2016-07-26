@@ -1,14 +1,16 @@
-import {Component, OnInit} from "@angular/core";
-import {Router} from "@angular/router";
-import {Artist} from "../artists/artist";
-import {Work} from "../works/work";
-import {Edition} from "../editions/edition";
-import {ArtistService} from "../artists/artist.service";
-import {WorkService} from "../works/work.service";
-import {EditionService} from "../editions/edition.service";
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {Artist} from '../artists/artist';
+import {Work} from '../works/work';
+import {Edition} from '../editions/edition';
+import {ArtistService} from '../artists/artist.service';
+import {WorkService} from '../works/work.service';
+import {EditionService} from '../editions/edition.service';
+import {OwlCarousel} from './owl.component';
 
 @Component({
     selector: 'home',
+    directives: [OwlCarousel],
     templateUrl: 'app/home/home.component.html'
 })
 export class HomeComponent implements OnInit {
@@ -16,6 +18,7 @@ export class HomeComponent implements OnInit {
     artists:Artist[] = [];
     works:Work[] = [];
     editions:Edition[] = [];
+    items1: Array<number> = [1, 2, 3, 4, 5];
 
 
     constructor(private router:Router,

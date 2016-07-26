@@ -17,29 +17,46 @@
             </div>
         </div>
     </header>
-    <section class="pt30 pb30">
-        <div class="container clearfix">
+
+    <section class="pt40 pb40">
+        <!-- team -->
+        <div class="container">
             <div class="row">
-                <!-- portfolio item -->
-                <article class="col-sm-4 isotopeItem women" *ngFor="let artist of list">
-                    <div class="pinBox">
-                        <figure>
-                            <img alt="" src="{{artist.img}}" class="img-responsive">
-                        </figure>
-                        <section class="boxContent">
+                <div class="col-sm-4" *ngFor="let artist of list">
+                    <article>
+                        <div><img src="{{artist.img}}" alt="" class="img-responsive"></div>
+                        <div class="boxContent color2 text-center">
                             <h3>
-                                <a href="#/artisti/{{artist.id}}" class="moreLink" >{{artist.name}}</a>
+                                <a href="#/artisti/{{artist.id}}" class="moreLink">{{artist.name}}</a>
                             </h3>
-                            <p>
-                                {{artist.bio}}
-                            </p>
-                        </section>
-                    </div>
-                </article>
-                <!-- portfolio item -->
+                            <p>{{artist.bio}}</p>
+                        </div>
+                        <div class="boxContent color1 text-center">
+                            <a href="#">{{artist.nationality}}</a>
+                            <ul class="socialNetwork mt15">
+                                <li>
+                                    <a href="#" class="tips" title="" data-original-title="follow me on Facebook">
+                                        <span class="badge">2016</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tips" title="" data-original-title="follow me on Twitter">
+                                        <span class="badge">2015</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tips" title="" data-original-title="follow me on Google+">
+                                        <span class="badge">2014</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
+    <!-- team -->
 </main>
 <!-- / content -->
 

@@ -3,7 +3,9 @@ export class Work {
     name:string;
     description:string;
     img:string;
-    artist:number;
+    edition:number;
+    artistName:string;
+    artistId:number;
 }
 
 

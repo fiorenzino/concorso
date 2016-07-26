@@ -1,12 +1,10 @@
 <!-- ======================================= content ======================================= -->
 <main id="content">
     <section>
-        <div class="owl-carousel neko-data-owl owl-animated nekoOwlcontrolHover" data-neko_items="1"
-             data-neko_singleitem="true" data-neko_pagination="true" data-neko_paginationnumbers="true"
-             data-neko_transitionstyle="fade" data-neko_autoheight="true" data-neko_navigation="true">
 
-            <!-- owl carousel item 1 -->
-            <div class="item">
+        <owl-carousel class="owl-carousel neko-data-owl owl-animated nekoOwlcontrolHover"
+                      [options]="{items: 1, singleitem: true, pagination: true, paginationnumbers: true, transitionstyle: fade, autoheight: true, navigation: true}">
+            <div *ngFor="let item of items1">
                 <div class="bgMask opacity-4"></div>
                 <img src="/images/slider/owl-animated/bg1.jpg" alt="image" class="full-width"/>
                 <div class="caption-wrapper">
@@ -17,7 +15,7 @@
                             <div class="caption-content textLight" data-neko_animation="fadeInLeftBig">
                                 <h1 class="bigHeading">Elegant & versatile design</h1>
                                 <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    {{ item }}
                                 </p>
                             </div>
                             <br> <a href="http://www.google.com" title="" class="btn default"
@@ -27,54 +25,8 @@
                     </div>
                 </div>
             </div>
-            <!-- / owl carousel item 1 -->
-
-            <!-- owl carousel item 2 -->
-            <div class="item">
-                <div class="bgMask opacity-5"></div>
-                <img src="/images/slider/owl-animated/bg2.jpg" alt="image" class="full-width"/>
-                <div class="caption-wrapper">
-                    <div class="caption right">
-                        <div class="caption-content-position text-right v-middle">
-                            <div class="caption-content textLight" data-neko_animation="fadeInDownBig">
-                                <h1 class="bigHeading">10 color schemes</h1>
-                                <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                            </div>
-                            <br>
-                            <a href="#" title="slide" class="btn default" data-neko_animation="fadeInUpBig">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- / owl carousel item 2 -->
-
-            <!-- owl carousel item 3 -->
-            <div class="item">
-                <div class="bgMask opacity-2"></div>
-                <img src="/images/slider/owl-animated/bg3.jpg" alt="image" class="full-width"/>
-                <div class="caption-wrapper">
-                    <div class="caption left">
-                        <div class="caption-content-position text-left v-middle">
-                            <div class="caption-content textLight" data-neko_animation="fadeInDownBig">
-                                <h1 class="bigHeading">Easy to use HTML components</h1>
-                                <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                            </div>
-                            <br> <a href="#" title="caption" class="btn default large"
-                                    data-neko_animation="fadeInUpBig">
-                            Read More
-                        </a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- / owl carousel item 3 -->
-
-        </div>
+        </owl-carousel>
+        
     </section>
     <!-- slider -->
 
